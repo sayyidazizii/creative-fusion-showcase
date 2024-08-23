@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolango - Partner Perjalanan Anda</title>
+    <link rel="shorcut icon" href="frontend/images/icon dolango.png">
+    <title>document</title>
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+    </style>
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <a href="index.html" class="navbar-brand">
+                <img src="frontend/images/dolango-LogoDNTYFix3.png" alt="company logo">
+            </a>
+            <!--  -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" 
+            data-toggle="collapse" 
+            data-target="#navb"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  -->
+            <div class="collapse navbar-collapse" id="navb">
+                <ul class="navbar-nav ml-auto mr-3">
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Paket Travel</a>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbardrop"
+                        data-toggle="dropdown">
+                        Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                            <a href="#" class="dropdown-item">Link</a>
+                        </div>
+                    </li>
+                    <!--  -->
+                    <li class="nav-item mx-md-2">
+                        <a href="#" class="nav-link">Testimonial</a>
+                    </li>
+                    <!-- mobile button -->
+                    <form class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0 px-4">
+                            Masuk
+                        </button>
+                    </form>
+                    <!-- desktop button -->
+                    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            Masuk
+                        </button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- header -->
+    <header class="text-center">
+        <h1>
+            Rileks Sejenak Dari
+            <br>
+            Kesibukanmu Mari
+            <br>
+            (Dolan) Bersama Kami
+        </h1>
+        <!-- gap -->
+        <p class="mt-3">
+            Dolan, Adalah Istilah Bahasa Jawa
+            <br>
+            Yang Berarti Pergi/Bermain Ke Rumah Teman
+        </p>
+        <!-- button -->
+        <a href="#popular" class="btn btn-get-started px-4 mt-4">
+            Lihat Aja Dulu
+        </a>
+    </header>
+    <!-- Main/Stats -->
+    <main>
+        <div class="container">
+            <section class="section-stats row 
+            justify-content-center" id="stats">
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>20K</h2>
+                    <p>Members</p>
+                </div>
+                <!--  -->
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>12</h2>
+                    <p>Countries</p>
+                </div>
+                <!--  -->
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>3K</h2>
+                    <p>Hotel</p>
+                </div>
+                <!--  -->
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>72</h2>
+                    <p>Partners</p>
+                </div>
+            </section>
+        </div>
+        <!-- Popular section -->
+        <section class="section-popular" id="popular">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-popular-heading">
+                        <h2>DOLAN KESINI AJA KAK</h2>
+                        <p>
+                            DILIHAT AJA DULU, SETELAH ITU KLIK TOMBOL
+                            <br>
+                            YANG WARNA ORANGE BIAR GAK PENASARAN, HEHE
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card e -->
+        <section class="section-popular-content" id="popular-content">
+            <div class="container">
+                <div class="section-popular-travel row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-travel text-center d-flex 
+                        flex-column"
+                        style="background-image: url('frontend/images/gambar1.jpg');">
+                            <div class="travel-country">INDONESIA</div>
+                            <div class="travel-location">PANTAI KLAYAR</div>
+                            <div class="travel-button mt-auto">
+                                <a href="details.html" class="btn btn-travel-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-travel text-center d-flex 
+                        flex-column"
+                        style="background-image: url('frontend/images/Gambar2.jpg');">
+                            <div class="travel-country">INDONESIA</div>
+                            <div class="travel-location">GUNUNG IJEN</div>
+                            <div class="travel-button mt-auto">
+                                <a href="details.html" class="btn btn-travel-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-travel text-center d-flex 
+                        flex-column"
+                        style="background-image: url('frontend/images/gambar3.jpg');">
+                            <div class="travel-country">INDONESIA</div>
+                            <div class="travel-location">CANDI BOROBUDUR</div>
+                            <div class="travel-button mt-auto">
+                                <a href="details.html" class="btn btn-travel-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card-travel text-center d-flex 
+                        flex-column"
+                        style="background-image: url('frontend/images/gambar4.jpg');">
+                            <div class="travel-country">SPANYOL</div>
+                            <div class="travel-location">MADRID</div>
+                            <div class="travel-button mt-auto">
+                                <a href="details.html" class="btn btn-travel-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section network -->
+        <section class="section-networks" id="networks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>Partner Kami</h2>
+                        <p>
+                            Yang Membantu Liburan
+                            <br>
+                            Kalian Jadi Nyaman 
+                        </p>
+                    </div>
+                    <div class="col-md-8 text-center">
+                        <img src="frontend/images/partner.png" 
+                        alt="Logo Partner" 
+                        class="img-partner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section testimonial -->
+        <section class="section-testimonial-heading" id="testimonialHeading">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Kata Mereka</h2>
+                        <!--  -->
+                        <p>
+                            Tentang Layanan Kami 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section testimoial content -->
+        <section class="section section-testimonial-content" id="testimonialContent">
+            <div class="container">
+                <div class="section-popular-travel row 
+                justify-content-center">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="card card-testimonial text-center">
+                            <div class="testimonial-content">
+                                <img src="frontend/images/pp-1.png" 
+                                alt="user" 
+                                class="mb-4 rounded-circle">
+                                <h3 class="mb-4">Sakazuki Doguinu</h3>
+                                <!-- content -->
+                                <p class="testimonial">
+                                    Pemandangan kawah yang sangat anti mainstream
+                                    dan sangat unik, kapan lagi anda bisa melihat
+                                    kawah berwarna-warni seperti di Kawah Ijen
+                                </p>
+                            </div>
+                            <!-- line -->
+                            <hr>
+                            <p class="trip-to mt-2">
+                                Trip To Gunung Ijen
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="card card-testimonial text-center">
+                            <div class="testimonial-content">
+                                <img src="frontend/images/pp-3.png" 
+                                alt="user" 
+                                class="mb-4 rounded-circle">
+                                <h3 class="mb-4">Mey'O Raybend</h3>
+                                <!-- content -->
+                                <p class="testimonial">
+                                    Rasanya seperti menikmati setiap langkah, 
+                                    dalam menapaki tangga demi tangga, menuju
+                                    ke titik paling tinggi
+                                </p>
+                            </div>
+                            <!-- line -->
+                            <hr>
+                            <p class="trip-to mt-2">
+                                Trip to Candi Borobudur
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="card card-testimonial text-center">
+                            <div class="testimonial-content">
+                                <img src="frontend/images/pp-4.png" 
+                                alt="user" 
+                                class="mb-4 rounded-circle">
+                                <h3 class="mb-4">Doronoa Djhoro</h3>
+                                <!-- content -->
+                                <p class="testimonial">
+                                    Jelajahi setiap sudut kotanya, sangat menarik,
+                                    tenang tidak perlu kuatir akan tersesat,
+                                    disini banyak penunjuk jalan wkwkwk
+                                </p>
+                            </div>
+                            <!-- line -->
+                            <hr>
+                            <p class="trip-to mt-2">
+                                Trip to Madrid
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="#" class="btn btn-need-help px-4 mt-4 mx-1">
+                            I Need Help
+                        </a>
+                        <!-- btn 2 -->
+                        <a href="#" class="btn btn-get-started px-4 mt-4 mx-1">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="section-footer mt-5 mb-4 border-top">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <h5>FITUR</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">Komunitas</a></li>
+                                <li><a href="#">Social Media Kit</a></li>
+                                <li><a href="#">Layanan Afiliasi</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer 2 -->
+                        <div class="col-12 col-lg-3">
+                            <h5>AKUN</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Ganti Rugi</a></li>
+                                <li><a href="#">Keamanan</a></li>
+                                <li><a href="#">Hadiah</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer 3 -->
+                        <div class="col-12 col-lg-3">
+                            <h5>PERUSAHAAN</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Karir</a></li>
+                                <li><a href="#">Layanan Service Center</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </div>
+                        <!-- footer 4 -->
+                        <div class="col-12 col-lg-3">
+                            <h5><img src="frontend/images/dolango-LogoDNTYFix3.png" alt=""></h5>
+                            <ul class="list-unstyled">
+                                <li><h6>Kabupaten Ngawi, Jawa Timur, Indonesia</h6></li>
+                                <li><a href="#">support@dolandgo.id</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer | copyright section -->
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    2024 Copyright - Dolango - All rights reserved - Made in Ngawi
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- gap JS -->
+    <script src="frontend/libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+</body>
+</html>

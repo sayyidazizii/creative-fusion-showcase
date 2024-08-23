@@ -1,0 +1,482 @@
+body {
+    background-color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #071c4d;
+}
+// Navbar
+.navbar-brand {
+    img {
+        max-height: 40px;
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #071C4D;
+
+            &.active {
+                font-weight: bold;
+                color: #071C4D !important;
+            }
+        }
+    }
+}
+
+.btn-login {
+    background-color: #071C4D;
+    color: #ffffff;
+    // gap
+    &:hover {
+        background-color: #1e3771;
+        color: #ffffff;
+    }
+}
+// Header
+header {
+    padding: 180px 0 165px;
+    margin-top: -70px;
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+
+    h1, p {
+        color: #ffffff;
+    }
+
+    h1 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .btn-get-started {
+        background-color: #FF9E53;
+        color: #ffffff;
+        // hover
+        &:hover {
+            background-color: #FFAA69;
+            color: #ffffff;
+        }
+    }
+}
+// Main - Stats
+.section-stats {
+    margin-top: -50px;
+
+    .stats-detail {
+        padding-top: 15px;
+        background-color: #ffffff;
+        padding-left: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+// Main - Popular section
+.section-popular {
+    min-height: 540px;
+    background-color: #051334;
+    margin-top: -50px;
+    margin-bottom: -230px;
+    // popular heading
+    .section-popular-heading {
+        margin-top: 150px;
+        // h2
+        h2,
+        p {
+            color: #fff;
+        }
+
+        h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.section-popular-content {
+    .section-popular-travel {
+        .card-travel {
+            min-height: 380px;
+            background-color: #ddd;
+            color: #fff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 20px;
+            border-radius: 9px;
+        }
+        // travel-country
+        .travel-country {
+            font-size: 16px;
+            color: #fff;
+        }
+        // travel-location
+        .travel-location {
+            font-size: 20px;
+            color: #fff;
+        }
+        // travel-button
+        .travel-button {
+            .btn-travel-details {
+                background-color: #FF9E53;
+                color: #fff;
+                // hover
+                &:hover {
+                    background-color: #FFAA69;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// section partner
+.section-networks {
+    background-color: #fff;
+    margin-top: -170px;
+    padding-top: 240px;
+    padding-bottom: 50px;
+    // h2
+    h2 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    // p
+    p {
+        font-size: 18px;
+    }
+    // img
+    img {
+        max-width: 100%;
+    }
+}
+// section testimonial heading
+.section-testimonial-heading {
+    background: linear-gradient(#f7f9ff 0%, #f7f9ff 100%);
+    padding-top: 50px;
+    min-height: 506px;
+
+    h2 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+// section testimonial-content
+.section-testimonial-content {
+    margin-top: -300px;
+    padding-bottom: 50px;
+    // card
+    .card-testimonial {
+        padding: 40px 20px 10px;
+        border-radius: 11px;
+        margin-bottom: 20px;
+        // testimonial content
+        .testimonial-content {
+            min-height: 380px;
+        }
+        // h3
+        h3 {
+            font-size: 22px;
+        }
+        // testimonial
+        .testimonial {
+            font-weight: 200px;
+            font-size: 26px;
+            color: #6e6e6e;
+            min-height: 200px;
+        }
+        // trip to
+        .trip-to {
+            font-weight: normal;
+            font-size: 22px;
+        }
+        // hr
+        hr {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+    // button get started
+    .btn-get-started {
+        background-color: #FF9E53;
+        color: #ffffff;
+        // hover
+        &:hover {
+            background-color: #FFAA69;
+            color: #ffffff;
+        }
+    }
+    // btn need help
+    .btn-need-help {
+        background-color: #F2F2F2;
+        color: #C3C3C3;
+        // hover
+        &:hover {
+            background-color: #FAFAFA;
+            color: #C3C3C3;
+        }
+    }
+}
+// section footer
+.section-footer {
+    a {
+        color: #071C4D;
+    }
+}
+// section details header
+.section-details-header {
+    min-height: 310px;
+    background: #E4E6EB;
+    margin-top: -68px;
+}
+// details content
+.section-details-content {
+    margin-top: -210px;
+    min-height: 100vh;
+    // breadcrumb
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    // breadcrumb item
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: #071C4D;
+        }
+    }
+    // card details
+    .card-details {
+        padding: 24px;
+        border-radius: 11px;
+        // h1
+        h1 {
+            font-size: 26px;
+        }
+        // h2
+        h2 {
+            font-size: 20px;
+        }
+        // p
+        p {
+            font-size: 18px;
+            color: #B1B1B1;
+        }
+        // h3
+        h3 {
+            font-weight: 600;
+            font-size: 14px;
+            color: #071C4D;
+        }
+        // trip information
+        .trip-information {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071C4D;
+            }
+            // td
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #B1B1B1;
+            }
+            // text-blue
+            .text-blue {
+                color: #071C4D;
+                font-weight: bold;
+            }
+            // text-orange | Tekan kene : CSS 
+            .text-orange {
+                color: #FF9E53;
+                font-weight: bold;
+            }
+        }
+        // payment instruction
+        .payment-instructions {
+            font-weight: 300;
+            font-size: 14px;
+            color: #B1B1B1;
+        }
+        // bank
+        .bank {
+            .bank-item {
+                h3 {
+                    font-size: 18px;
+                    color: #071C4D;
+                    margin-bottom: 0;
+                }
+                // p
+                p {
+                    margin-bottom: 0;
+                }
+                // description
+                .description {
+                    margin-left: 10px;
+                    overflow: hidden;
+                    float: left;
+                    // p
+                    p {
+                        font-weight: normal;
+                        font-size: 16px;
+                        color: #071C4D;
+                    }
+                }
+            }
+            // bank image
+            .bank-image {
+                width: 45px;
+                height: 45px;
+                float: left;
+            }
+        }
+        // disclaimer
+        .disclaimer {
+            font-weight: 300;
+            font-size: 14px;
+            color: #B1B1B1;
+        }
+        // datepicker
+        .gj-datepicker {
+            .datepicker {
+                border-right: 0;
+            }
+            // input group append
+            .input-group-append {
+                .btn {
+                    padding-right: 30px;
+                }
+            }
+        }
+        // btn add now
+        .btn-add-now {
+            background-color: #071C4D;
+            color: #FFFFFF;
+            // hover e
+            &:hover {
+                background-color: #1B3B86;
+                color: #FFFFFF;
+            }
+        }
+    }
+    // card right
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+    }
+    // features
+    .features {
+        margin-top: 20px;
+        // h3
+        h3 {
+            font-size: 18px;
+            color: #071C4D;
+            margin-bottom: 0;
+        }
+        // p
+        p {
+            margin-bottom: 0;
+        }
+        // description
+        .description {
+            margin-left: 10px;
+            overflow: hidden;
+            float: left;
+        }
+        // features-image
+        .features-image {
+            width: 45px;
+            height: 45px;
+            float: left;
+        }
+    }
+    // xzoom-gallery
+    .gallery {
+        .xzoom-container {
+            display: block;
+            // xzoom
+            .xzoom {
+                width: 100%;
+                box-shadow: none;
+                margin-bottom: 10px;
+            }
+            // xactive
+            .xactive {
+                border: 4px solid #1ABC9C;
+                box-shadow: none;
+            }
+        }
+    }
+    // member image
+    .member {
+        .member-image {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // join container
+    .join-container {
+        margin-top: -16px;
+    }
+    // btn-join
+    .btn-join-now {
+        background-color: #FF9E53;
+        color: #FFFFFF;
+        border-radius: 0px 0px 11px 11px;
+        
+        &:hover {
+            background-color: #FF857C;
+            color: #FFFFFF;
+        }
+    }
+}
+// section success
+.section-success {
+    height: 90vh;
+    // h1
+    h1 {
+        font-weight: 600;
+        font-size: 26px;
+        color: #071C4D;
+    }
+    // p
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: #B1B1B1;
+    }
+    // btn home page
+    .btn-home-page {
+        border-radius: 4px;
+        background-color: #071C4D;
+        color: #FFFFFF;
+        // hover
+        &:hover {
+            background-color: #2A488E;
+            color: #FFFFFF;
+        }
+    }
+}
