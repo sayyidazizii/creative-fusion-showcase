@@ -1,19 +1,3 @@
-/* -------------------------------------------------------------------------- */
-/*                                 Theme                                      */
-/* -------------------------------------------------------------------------- */
-/* prettier-ignore */
-/* -------------------------------------------------------------------------- */
-/*                                  Utilities                                 */
-/* -------------------------------------------------------------------------- */
-/*-----------------------------------------------
-|   Bootstrap Styles
------------------------------------------------*/
-/*!
- * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #005DFF;
   --bs-indigo: #6610F2;
@@ -36,8 +20,6 @@
   --bs-danger: #F43E36;
   --bs-light: #F9FAFD;
   --bs-dark: #212121;
-  --bs-font-sans-serif: "Roboto", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --bs-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 254, 254, 0.15), rgba(255, 254, 254, 0));
 }
 
@@ -56,7 +38,7 @@
 
 body {
   margin: 0;
-  font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -81,7 +63,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: #212121;
