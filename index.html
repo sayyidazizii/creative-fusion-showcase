@@ -8,34 +8,22 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Jepret | Gallery and Fotografy  </title>
+    <title>Jepret - Gallery and Fotografy  </title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
-    />
-    <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
+      href="assets/img/favicons/ico-192x192.png"
     />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/favicons/favicon.ico"
+      href="assets/img/favicons/ico.ico"
     />
-    <link rel="manifest" href="assets/img/favicons/manifest.json" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta
       name="msapplication-TileImage"
@@ -107,7 +95,7 @@
     }
 
     /* Header Styling */
-    #header h1, #header p ,#howitworks h1 , #howitworks p ,#some h1 , #some p ,#footer h5 , #footer ul ,#footer li   {
+    #header h1, #header p ,#howitworks h1 , #howitworks p ,#some h1 , #some p ,#footer h5 , #footer ul ,#footer li {
       color: inherit; /* Ensure header text inherits color from body */
     }
 
@@ -132,7 +120,7 @@
       >
         <div class="container">
           <a class="navbar-brand d-inline-flex" href="index.html">
-            <img class="card-img" src="assets/img/gallery/logo.png" alt="..." />
+            <img class="card-img" src="assets/img/favicons/ico-35x35.png" alt="..." />
             <span class="fs-2 fw-bold text-primary ms-2">
               Jepre<span class="text-warning">T</span>
             </span>
@@ -166,14 +154,13 @@
               </li>
             </ul>
                <!-- Toggle Button for Dark/Light Mode -->
-            <button class="btn btn-sm btn-outline-secondary ms-3" onclick="toggleMode()">
+            <button class="btn btn-sm btn-outline-secondary ms-3 rounded-pill" onclick="toggleMode()">
               <i class="fas fa-sun d-none" id="light-icon"></i>
               <i class="fas fa-moon d-inline" id="dark-icon"></i>
             </button>
           </div>
         </div>
       </nav>
-
       <!-- end navbar -->
       <section class="py-0" id="header">
         <div class="container">
@@ -269,46 +256,6 @@
             </div>
           </div>
         </div>
-        <div class="container-fluid"></div>
-          <div class="row gx-2">
-            <div class="col-12">
-              <div class="swiper-container pb-4 overflow-hidden" data-pagination-target="pagination1">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
-                  </div>
-                  <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- ============================================-->
@@ -318,7 +265,7 @@
           <div class="row">
             <div class="col-12">
               <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
-                Deliver and Jepret
+               <span class="text-warning">How</span><span class="text-primary">About</span><span class="text-secondary">This</span>
               </h1>
             </div>
           </div>
@@ -360,7 +307,7 @@
           <div class="row h-100">
             <div class="col-lg-7 mx-auto text-center mb-6">
               <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
-                some Jepret
+                Awesome <span class="text-warning">Jepre</span><span class="text-primary">T</span>
               </h1>
             </div>
             <div class="col-12">
@@ -372,48 +319,48 @@
               >
                 <button
                   class="nav-link active"
-                  id="nav-food-tab"
+                  id="nav-animal-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-food"
+                  data-bs-target="#nav-animal"
                   type="button"
                   role="tab"
-                  aria-controls="nav-food"
+                  aria-controls="nav-animal"
                   aria-selected="true"
                 >
                   Animal
                 </button>
                 <button
                   class="nav-link"
-                  id="nav-shoes-tab"
+                  id="nav-landscape-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-shoes"
+                  data-bs-target="#nav-landscape"
                   type="button"
                   role="tab"
-                  aria-controls="nav-shoes"
+                  aria-controls="nav-landscape"
                   aria-selected="false"
                 >
                   Landscape
                 </button>
                 <button
                   class="nav-link"
-                  id="nav-watches-tab"
+                  id="nav-outdoor-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-watches"
+                  data-bs-target="#nav-outdoor"
                   type="button"
                   role="tab"
-                  aria-controls="nav-watches"
+                  aria-controls="nav-outdoor"
                   aria-selected="false"
                 >
                   OutDoor
                 </button>
                 <button
                   class="nav-link"
-                  id="nav-cosmetics-tab"
+                  id="nav-building-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#nav-cosmetics"
+                  data-bs-target="#nav-building"
                   type="button"
                   role="tab"
-                  aria-controls="nav-cosmetics"
+                  aria-controls="nav-building"
                   aria-selected="false"
                 >
                   Building
@@ -423,7 +370,7 @@
             <div class="tab-content" id="nav-tabContent">
               <div
                 class="tab-pane fade show active"
-                id="nav-food"
+                id="nav-animal"
                 role="tabpanel"
                 aria-labelledby="nav-food-tab"
               >
@@ -432,7 +379,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-1.png"
+                        src="assets/img/gallery/animal/1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -441,7 +388,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-2.png"
+                        src="assets/img/gallery/animal/2.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -450,7 +397,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-3.png"
+                        src="assets/img/gallery/animal/11.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -459,7 +406,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-4.png"
+                        src="assets/img/gallery/animal/4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -468,7 +415,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-5.png"
+                        src="assets/img/gallery/animal/5.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -477,7 +424,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/food-6.png"
+                        src="assets/img/gallery/animal/12.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -486,14 +433,14 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
               </div>
               <div
                 class="tab-pane fade"
-                id="nav-shoes"
+                id="nav-landscape"
                 role="tabpanel"
                 aria-labelledby="nav-shoes-tab"
               >
@@ -502,7 +449,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-1.png"
+                        src="assets/img/gallery/landscape/1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -511,7 +458,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-2.png"
+                        src="assets/img/gallery/landscape/10.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -520,7 +467,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-3.png"
+                        src="assets/img/gallery/landscape/9.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -529,7 +476,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-4.png"
+                        src="assets/img/gallery/landscape/4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -538,7 +485,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-5.png"
+                        src="assets/img/gallery/landscape/5.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -547,7 +494,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/shoes-6.png"
+                        src="assets/img/gallery/landscape/6.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -556,14 +503,14 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
               </div>
               <div
                 class="tab-pane fade"
-                id="nav-watches"
+                id="nav-outdoor"
                 role="tabpanel"
                 aria-labelledby="nav-watches-tab"
               >
@@ -572,7 +519,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-1.png"
+                        src="assets/img/gallery/outdoor/1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -581,7 +528,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-2.png"
+                        src="assets/img/gallery/outdoor/9.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -590,7 +537,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-3.png"
+                        src="assets/img/gallery/outdoor/3.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -599,7 +546,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-4.png"
+                        src="assets/img/gallery/outdoor/8.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -608,7 +555,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-5.png"
+                        src="assets/img/gallery/outdoor/4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -617,7 +564,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/watch-6.png"
+                        src="assets/img/gallery/outdoor/6.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -626,14 +573,14 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
               </div>
               <div
                 class="tab-pane fade"
-                id="nav-cosmetics"
+                id="nav-building"
                 role="tabpanel"
                 aria-labelledby="nav-cosmetics-tab"
               >
@@ -642,7 +589,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-1.png"
+                        src="assets/img/gallery/building/1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -651,7 +598,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-2.png"
+                        src="assets/img/gallery/building/2.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -660,7 +607,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-3.png"
+                        src="assets/img/gallery/building/3.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -669,7 +616,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-4.png"
+                        src="assets/img/gallery/building/4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -678,7 +625,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-5.png"
+                        src="assets/img/gallery/building/8.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -687,7 +634,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/cosmetics-6.png"
+                        src="assets/img/gallery/building/6.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -696,7 +643,7 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
@@ -766,7 +713,7 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
@@ -836,7 +783,7 @@
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
                       href="#!"
-                      >View portfolio<i class="fas fa-arrow-right ms-2"></i
+                      >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
                 </div>
@@ -962,7 +909,7 @@
           <div
             class="bg-holder z-index--1 rounded-3"
             style="
-              background-image: url(assets/img/gallery/cta-bg.png);
+              background-image: url(assets/img/gallery/bg.png);
               background-position: center;
               background-size: cover;
             "
@@ -972,7 +919,7 @@
           <div class="row flex-center py-5">
             <div class="col-xxl-9 py-5 text-center">
               <h1 class="fw-bold mb-6 fs-lg-7">
-                Get Jepret your Moments<br />images today that matter
+                Get Capture your Moments<br />images today that matter
               </h1>
               <!-- Email Form -->
               <form id="emailForm" class="d-flex flex-column align-items-center">
@@ -1007,8 +954,8 @@
       <script>
         // JavaScript to handle mailto link generation
         document.getElementById('mailtoLink').addEventListener('click', function () {
-          var email = 'sayyidsyafiq234@gmail.com'; // Email tujuan
-          var subject = 'New Message from Website Contact Form';
+          var email = 'jepretin@gmail.com'; // Email tujuan
+          var subject = 'New Message from Website JepreT';
           var emailInput = document.getElementById('emailInput').value;
           var messageInput = document.getElementById('messageInput').value;
 
@@ -1053,10 +1000,14 @@
               </ul>
             </div>
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
-              <h5 class="lh-lg fw-bold text-1000">Pricing</h5>
+              <h5 class="lh-lg fw-bold text-1000">Social</h5>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
                 <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">Plans</a>
+                  <a class="text-800 text-decoration-none" href="#!"> <a href="#!"
+                  ><i class="me-4 fab fa-facebook fs-3 text-facebook"></i></a
+                ><a href="#!">
+                  <i class="me-4 fab fa-instagram fs-3 text-instagram"></i
+                ></a></a>
                 </li>
               </ul>
             </div>
@@ -1075,27 +1026,10 @@
                 ><span class="text-800">Surakarta, ID </span>
               </p>
             </div>
-            <div class="col-12">
-              <div class="text-center my-4">
-                <a href="#!"
-                  ><i class="me-4 fab fa-facebook fs-3 text-facebook"></i></a
-                ><a href="#!">
-                  <i class="me-4 fab fa-twitter fs-3 text-twitter"></i></a
-                ><a href="#!">
-                  <i class="me-4 fab fa-instagram fs-3 text-instagram"></i
-                ></a>
-              </div>
-            </div>
           </div>
           <div class="border-bottom border-3"></div>
-          <div class="row">
-            <div class="col-md-6">
-              <p class="my-2 text-center text-md-start">
-                All rights Reserved &copy; <span class="text-bold text-warning">Jepret</span> , 2024
-              </p>
-            </div>
-            <div class="col-md-6 order-1 order-md-0">
-              <p class="my-2 text-1000 text-md-end text-center">
+          <div class="row text-center">
+              <p class="text-1000 text-center">
                 Made with&nbsp;
                 <svg
                   class="bi bi-suit-heart-fill"
@@ -1112,10 +1046,9 @@
                   class="text-800"
                   href="#"
                   target="_blank"
-                  >JepretTeam
+                  >JepretTeam @2024
                 </a>
               </p>
-            </div>
           </div>
         </div>
         <!-- end of .container-->
@@ -1132,9 +1065,7 @@
     <!-- ===============================================-->
     <script src="vendors/@popperjs/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script>
