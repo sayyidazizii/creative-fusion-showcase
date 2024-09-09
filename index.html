@@ -8,7 +8,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Clickr | Landing, Ecommerce &amp; Business Templatee</title>
+    <title>Jepret | Gallery and Fotografy  </title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
@@ -36,6 +36,7 @@
       href="assets/img/favicons/favicon.ico"
     />
     <link rel="manifest" href="assets/img/favicons/manifest.json" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta
       name="msapplication-TileImage"
       content="assets/img/favicons/mstile-150x150.png"
@@ -48,6 +49,75 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <style>
+    /* Light Mode (Default) */
+    body.light-mode {
+      background-color: white;
+      color: black;
+    }
+    .navbar-light-mode {
+      background-color: white; /* Navbar light background */
+      color: black;
+      border-bottom-left-radius: 30px; /* Adjust radius as needed */
+      border-bottom-right-radius: 30px; /* Adjust radius as needed */
+    }
+
+    body.light-mode .navbar {
+      background-color: white;
+      color: black;
+    }
+
+    body.light-mode .navbar .nav-link {
+      color: black;
+    }
+
+    .navbar-dark-mode {
+      background-color: #222; /* Navbar dark background */
+      color: white;
+      border-bottom-left-radius: 30px; /* Adjust radius as needed */
+      border-bottom-right-radius: 30px; /* Adjust radius as needed */
+    }
+
+    body.light-mode .navbar .nav-link:hover {
+      color: #ffc107;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #222;
+      color: white;
+    }
+
+    body.dark-mode .navbar .nav-link {
+      color: white;
+    }
+
+    body.dark-mode .navbar .nav-link:hover {
+      color: #ffc107;
+    }
+
+    body.dark-mode .text-light {
+      color: white; /* Ensure text is white in dark mode */
+    }
+
+    /* Header Styling */
+    #header h1, #header p ,#howitworks h1 , #howitworks p ,#some h1 , #some p ,#footer h5 , #footer ul ,#footer li   {
+      color: inherit; /* Ensure header text inherits color from body */
+    }
+
+    /* Additional Styles */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      filter: invert(1); /* Makes carousel controls visible in dark mode */
+    }
+
+    </style>
+    
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -55,20 +125,18 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
+      <!-- navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block"
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-light-mode"
         data-navbar-on-scroll="data-navbar-on-scroll"
       >
         <div class="container">
-          <a class="navbar-brand d-inline-flex" href="index.html"
-            ><img
-              class="card-img"
-              src="assets/img/gallery/logo.png"
-              alt="..."
-            /><span class="fs-2 fw-bold text-primary ms-2"
-              >CLICK<span class="text-warning">R</span></span
-            ></a
-          >
+          <a class="navbar-brand d-inline-flex" href="index.html">
+            <img class="card-img" src="assets/img/gallery/logo.png" alt="..." />
+            <span class="fs-2 fw-bold text-primary ms-2">
+              Jepre<span class="text-warning">T</span>
+            </span>
+          </a>
           <button
             class="navbar-toggler collapsed"
             type="button"
@@ -86,10 +154,7 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
-                <a
-                  class="nav-link fw-bold"
-                  aria-current="page"
-                  href="index.html"
+                <a class="nav-link fw-bold" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
@@ -97,116 +162,107 @@
                 <a class="nav-link fw-bold" href="">Gallery</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#howitworks">How it works</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#services">Services</a>
-              </li>
-              <li class="nav-item px-2">
                 <a class="nav-link fw-bold" href="">About Us</a>
               </li>
             </ul>
+               <!-- Toggle Button for Dark/Light Mode -->
+            <button class="btn btn-sm btn-outline-secondary ms-3" onclick="toggleMode()">
+              <i class="fas fa-sun d-none" id="light-icon"></i>
+              <i class="fas fa-moon d-inline" id="dark-icon"></i>
+            </button>
           </div>
         </div>
       </nav>
+
+      <!-- end navbar -->
       <section class="py-0" id="header">
         <div class="container">
           <div class="row align-items-center min-vh-75 min-vh-md-50">
-            <div class="col-12 text-center py-8">
+            <!-- Left Column for Text -->
+            <div class="col-md-6 text-center text-md-start py-8">
               <h1 class="lh-sm fs-lg-6 fs-xxl-7">
-                San Francisco Based <br />Product Photography Services
+                High-quality photo gallery, <br />Moments and events <br />into memorable memories
               </h1>
               <p class="text-700">
-                Get high-quality aesthetic photographs of your valuable products
-                within few days
+                Capture your special moments with professional photography services that turn your memories into stunning visuals.
               </p>
               <div class="mt-5">
-                <a
-                  class="btn btn-sm btn-warning rounded-pill"
-                  href="#getstarted"
-                  ><i class="fas fa-camera me-2"></i>Book a photoshoot</a
-                >
+                <a class="btn btn-sm btn-warning rounded-pill" href="#getstarted">
+                  <i class="fas fa-camera me-2"></i>Let's Jepret Photoshoot
+                </a>
+              </div>
+            </div>
+            <!-- Right Column for Image Carousel -->
+            <div class="col-md-6 d-flex justify-content-center">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="assets/img/corousel/c-1.jpg" alt="HD Camera Photography 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="assets/img/corousel/c-2.jpg" alt="HD Camera Photography 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-fluid" src="assets/img/corousel/c-3.jpg" alt="HD Camera Photography 3">
+                  </div>
+                </div>
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Gallery Section -->
         <div class="container-fluid">
           <div class="row gx-2">
             <div class="col-12">
-              <div
-                class="swiper-container pb-4 overflow-hidden"
-                data-pagination-target="pagination1"
-              >
+              <div class="swiper-container pb-4 overflow-hidden" data-pagination-target="pagination1">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-1.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-2.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-3.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-4.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-5.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-1.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-2.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-3.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-4.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img
-                      class="w-100"
-                      src="assets/img/gallery/product-5.png"
-                      alt="products"
-                    />
+                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
                   </div>
                 </div>
               </div>
@@ -217,60 +273,36 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6">
-        <div class="container">
-          <hr class="mt-1" />
-        </div>
-        <!-- end of .container-->
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-0" id="howitworks">
+      <section class="py-0 mt-3" id="howitworks">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <p class="text-center">How It happens</p>
               <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
-                You deliver-We Click
+                Deliver and Jepret
               </h1>
             </div>
           </div>
-          <div class="row mt-6">
+          <div class="row mt-3">
             <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-              <div class="badge badge-circle bg-soft-primary flex-center">
-                <div class="text-primary fs-7 font-base">1</div>
-              </div>
               <h5 class="text-primary text-center mt-3">
-                Inform us about your product
+                Inform 
               </h5>
               <p class="text-center mx-xl-7">
-                Introduce your product, select through the pricing plan and let
-                us know if you have any references in mind
+                Tell us about anything you want to photograph
               </p>
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-              <div class="badge badge-circle bg-soft-warning flex-center">
-                <div class="text-warning fs-7 font-base">2</div>
-              </div>
               <h5 class="text-primary text-center mt-3">
-                Deliver your products
+                Deliver 
               </h5>
               <p class="text-center mx-xl-7">
-                Deliver the sujects at our doorstep, we will click perfect shots
-                in no time and make it online ready
+               Deliver the subjects at email, we will Jepret
               </p>
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-              <div class="badge badge-circle bg-soft-success flex-center">
-                <div class="text-success fs-7 font-base">3</div>
-              </div>
-              <h5 class="text-primary text-center mt-3">Reviewing the shots</h5>
+              <h5 class="text-primary text-center mt-3">Reviewing</h5>
               <p class="text-center mx-xl-7">
-                After the photoshoot, you will get to review the shots and let
-                us know if there any modification needed.
+                After the Jepret, you will get to review the shots.
               </p>
             </div>
           </div>
@@ -280,16 +312,15 @@
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
-
-      <!-- <section> close ============================-->
+      
       <!-- ============================================-->
-
-      <section class="py-5">
+      <!-- <section> begin ============================-->
+      <section class="py-5" id="some">
         <div class="container">
           <div class="row h-100">
             <div class="col-lg-7 mx-auto text-center mb-6">
               <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
-                Over 1,00,000 Photos Shot
+                some Jepret
               </h1>
             </div>
             <div class="col-12">
@@ -309,7 +340,7 @@
                   aria-controls="nav-food"
                   aria-selected="true"
                 >
-                  Food
+                  Animal
                 </button>
                 <button
                   class="nav-link"
@@ -321,7 +352,7 @@
                   aria-controls="nav-shoes"
                   aria-selected="false"
                 >
-                  Shoes
+                  Landscape
                 </button>
                 <button
                   class="nav-link"
@@ -333,7 +364,7 @@
                   aria-controls="nav-watches"
                   aria-selected="false"
                 >
-                  Watches
+                  OutDoor
                 </button>
                 <button
                   class="nav-link"
@@ -345,31 +376,7 @@
                   aria-controls="nav-cosmetics"
                   aria-selected="false"
                 >
-                  Cosmetics
-                </button>
-                <button
-                  class="nav-link"
-                  id="nav-phone-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-phone"
-                  type="button"
-                  role="tab"
-                  aria-controls="nav-phone"
-                  aria-selected="false"
-                >
-                  Phone
-                </button>
-                <button
-                  class="nav-link"
-                  id="nav-camera-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-camera"
-                  type="button"
-                  role="tab"
-                  aria-controls="nav-camera"
-                  aria-selected="false"
-                >
-                  Camera
+                  Building
                 </button>
               </div>
             </div>
@@ -810,13 +817,13 @@
             <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
               <div class="col">
                 <div
-                  class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-primary"
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
                 >
                   <div class="row g-0 flex-center">
                     <div class="col-md-5 col-lg-4 order-0 mb-md-4">
                       <img
                         class="text-center w-100"
-                        src="assets/img/gallery/services-shoe-blue.png"
+                        src="assets/img/icons/animal.gif"
                         alt="..."
                       />
                     </div>
@@ -833,13 +840,13 @@
               </div>
               <div class="col">
                 <div
-                  class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-primary"
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
                 >
                   <div class="row g-0 flex-center">
                     <div class="col-md-5 col-lg-4 order-0 mb-md-4">
                       <img
                         class="text-center w-100"
-                        src="assets/img/gallery/services-shoe-blue.png"
+                        src="assets/img/icons/landscape.gif"
                         alt="..."
                       />
                     </div>
@@ -856,13 +863,13 @@
               </div>
               <div class="col">
                 <div
-                  class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-primary"
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
                 >
                   <div class="row g-0 flex-center">
                     <div class="col-md-5 col-lg-4 order-0 mb-md-4">
                       <img
                         class="text-center w-100"
-                        src="assets/img/gallery/services-shoe-blue.png"
+                        src="assets/img/icons/outdoor.gif"
                         alt="..."
                       />
                     </div>
@@ -879,13 +886,13 @@
               </div>
               <div class="col">
                 <div
-                  class="card mb-3 hover-top-shadow rounded-3 py-3 bg-soft-primary"
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
                 >
                   <div class="row g-0 flex-center">
                     <div class="col-md-5 col-lg-4 order-0 mb-md-4">
                       <img
                         class="text-center w-100"
-                        src="assets/img/gallery/services-shoe-blue.png"
+                        src="assets/img/icons/building.gif"
                         alt="..."
                       />
                     </div>
@@ -909,11 +916,6 @@
       <!-- ============================================-->
 
       <!-- ============================================-->
-
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
-      <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section id="getstarted" class="py-6">
         <div class="container">
@@ -930,11 +932,30 @@
           <div class="row flex-center py-5">
             <div class="col-xxl-9 py-5 text-center">
               <h1 class="fw-bold mb-6 fs-lg-7">
-                Get your commercial product<br />images today that matter
+                Get Jepret your Moments<br />images today that matter
               </h1>
-              <a class="btn btn-lg btn-warning rounded-pill" href="#"
-                >Get Started Now<i class="fas fa-check ms-2"></i
-              ></a>
+              <!-- Email Form -->
+              <form id="emailForm" class="d-flex flex-column align-items-center">
+                <input
+                  type="email"
+                  class="form-control mb-3 rounded-pill"
+                  placeholder="Enter your email"
+                  id="emailInput"
+                  required
+                  style="max-width: 500px;"
+                />
+                <textarea
+                  class="form-control mb-3 rounded"
+                  placeholder="Enter your message"
+                  id="messageInput"
+                  rows="4"
+                  required
+                  style="max-width: 500px;"
+                ></textarea>
+                <a class="btn btn-lg btn-warning rounded-pill" href="#" id="mailtoLink">
+                  send<i class="fas fa-check ms-2"></i>
+                </a>
+              </form>
             </div>
           </div>
         </div>
@@ -943,75 +964,41 @@
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
+      <script>
+        // JavaScript to handle mailto link generation
+        document.getElementById('mailtoLink').addEventListener('click', function () {
+          var email = 'sayyidsyafiq234@gmail.com'; // Email tujuan
+          var subject = 'New Message from Website Contact Form';
+          var emailInput = document.getElementById('emailInput').value;
+          var messageInput = document.getElementById('messageInput').value;
+
+          // Membuat URL mailto
+          var mailtoLink = 'mailto:' + email 
+                        + '?subject=' + encodeURIComponent(subject)
+                        + '&body=' + encodeURIComponent('From: ' + emailInput + '\n\nMessage:\n' + messageInput);
+
+          // Mengatur atribut href dengan mailto URL
+          this.href = mailtoLink;
+        });
+      </script>
+
       <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="py-0 pt-7">
+      <!-- footer begin ============================-->
+      <section class="py-0 pt-7" id="footer">
         <div class="container">
           <div class="row justify-content-xl-between gx-3">
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
-              <h5 class="lh-lg fw-bold text-1000">Why Us</h5>
+              <h5 class="lh-lg fw-bold text-1000">Home</h5>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
                 <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">Channel</a>
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Engagement</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">Scale</a>
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Watch Demo</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
-              <h5 class="lh-lg fw-bold text-1000">Product</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Features</a
+                  <a class="text-800 text-decoration-none" href="#howitswork"
+                    >How About This</a
                   >
                 </li>
                 <li class="lh-lg">
                   <a class="text-800 text-decoration-none" href="#!"
-                    >Integrations</a
+                    >some portfolio</a
                   >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Enterprise</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Solutions</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
-              <h5 class="lh-lg fw-bold text-1000">Resources</h5>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Partners</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Developers</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">Apps</a>
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">Blogs</a>
                 </li>
               </ul>
             </div>
@@ -1023,19 +1010,6 @@
                     >About Us</a
                   >
                 </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Leadership</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Investor Relations</a
-                  >
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!">News</a>
-                </li>
               </ul>
             </div>
             <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
@@ -1043,11 +1017,6 @@
               <ul class="list-unstyled mb-md-4 mb-lg-0">
                 <li class="lh-lg">
                   <a class="text-800 text-decoration-none" href="#!">Plans</a>
-                </li>
-                <li class="lh-lg">
-                  <a class="text-800 text-decoration-none" href="#!"
-                    >Paid vs. Free</a
-                  >
                 </li>
               </ul>
             </div>
@@ -1059,11 +1028,11 @@
               </p>
               <p class="text-800">
                 <i class="fas fa-envelope text-warning me-2"></i
-                ><span class="text-800">example@email.com</span>
+                ><span class="text-800">jepretin@gmail.com</span>
               </p>
               <p class="text-800">
                 <i class="fas fa-map-marker-alt text-success me-2"></i
-                ><span class="text-800">567, Kansas, San Francisco, USA </span>
+                ><span class="text-800">Surakarta, ID </span>
               </p>
             </div>
             <div class="col-12">
@@ -1082,7 +1051,7 @@
           <div class="row">
             <div class="col-md-6">
               <p class="my-2 text-center text-md-start">
-                All rights Reserved &copy; Your Company, 2021
+                All rights Reserved &copy; <span class="text-bold text-warning">Jepret</span> , 2024
               </p>
             </div>
             <div class="col-md-6 order-1 order-md-0">
@@ -1101,9 +1070,9 @@
                   ></path></svg
                 >&nbsp;by&nbsp;<a
                   class="text-800"
-                  href="https://themewagon.com/"
+                  href="#"
                   target="_blank"
-                  >ThemeWagon
+                  >JepretTeam
                 </a>
               </p>
             </div>
@@ -1128,7 +1097,17 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
-
+    <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+      document.getElementById('light-icon').classList.toggle('d-inline');
+      document.getElementById('light-icon').classList.toggle('d-none');
+      document.getElementById('dark-icon').classList.toggle('d-inline');
+      document.getElementById('dark-icon').classList.toggle('d-none');
+    }
+    </script>
+    
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
       rel="stylesheet"
