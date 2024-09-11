@@ -124,7 +124,31 @@
                 class="nav nav-tabs clickr-tabs mb-6 justify-content-center"
                 id="nav-tab"
                 role="tablist"
-              >         
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-food-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-food"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-food"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-shoes-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-shoes"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-shoes"
+                  aria-selected="false"
+                >
+                  Animal
+                </button>
                 <button
                   class="nav-link"
                   id="nav-watches-tab"
@@ -137,10 +161,40 @@
                 >
                   Landscape
                 </button>
+                <button
+                  class="nav-link"
+                  id="nav-cosmetics-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-cosmetics"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-cosmetics"
+                  aria-selected="false"
+                >
+                  Outdoor
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-phone-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-phone"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-phone"
+                  aria-selected="false"
+                >
+                  Building
+                </button>
               </div>
             </div>
             <!-- Tab all -->
             <div class="tab-content" id="nav-tabContent">
+              <div 
+                class="tab-pane fade show active"
+                id="nav-food"
+                role="tabpanel"
+                aria-labelledby="nav-food-tab"
+              >
               <!-- all picture | A(L1,2,3), L(L2,5,6), O(L1,2,5), B(L1,2,3) -->
                 <div class="row gx-3">
                   <div class="col-sm-6 col-md-4 mb-3 h-100">
