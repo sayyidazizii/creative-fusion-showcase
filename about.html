@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Jepret - Gallery and Fotografy</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/logo-35x35.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicons/ico.ico"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- flag -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .navbar {
+        color: white;
+        border-bottom-left-radius: 30px; /* Adjust radius as needed */
+        border-bottom-right-radius: 30px; /* Adjust radius as needed */
+      }
+
+      /* Additional Styles */
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1); /* Makes carousel controls visible in dark mode */
+      }
+
+      #loader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f3f3f3; /* Warna background loader */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      #loader::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border: 5px solid #3498db;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <div id="loader"></div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-light-mode"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand d-inline-flex" href="index.html">
+            <img
+              class="card-img"
+              src="assets/img/favicons/ico-35x35.png"
+              alt="..."
+            />
+            <span class="fs-2 fw-bold text-primary ms-2">
+              Jepre<span class="text-warning">T</span>
+            </span>
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="portofolio.html">Gallery</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="about.html">About Us</a>
+              </li>
+            </ul>
+            <!-- Dropdown for Language Selection with Colored Flags -->
+            <div class="dropdown ms-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-us me-1"></span> ENG
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-id me-2"></span> ID
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-us me-2"></span> ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end navbar -->
+      <section class="py-0" id="header">
+        <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-md-50">
+            <!-- Left Column for Text -->
+            <div class="text-center text-md-center py-8">
+              <h1 class="lh-sm fs-lg-6 fs-xxl-7">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Fugiat, saepe.
+              </h1>
+              <p class="text-700">
+                Capture your special moments with professional photography
+                services that turn your memories into stunning visuals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+
+    <script>
+      window.onload = function () {
+        // Sembunyikan loader
+        document.getElementById("loader").style.display = "none";
+        // Tampilkan konten
+        document.getElementById("content").style.display = "block";
+      };
+    </script>
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+      function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("light-mode");
+        document.getElementById("light-icon").classList.toggle("d-inline");
+        document.getElementById("light-icon").classList.toggle("d-none");
+        document.getElementById("dark-icon").classList.toggle("d-inline");
+        document.getElementById("dark-icon").classList.toggle("d-none");
+      }
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>

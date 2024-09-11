@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Jepret - Jepret setiap memori </title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/logo-35x35.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicons/ico.ico"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicons/mstile-150x150.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Include Flag Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet" />
+
+
+    <style>
+
+    .navbar {
+      color: white;
+      border-bottom-left-radius: 30px; /* Adjust radius as needed */
+      border-bottom-right-radius: 30px; /* Adjust radius as needed */
+    }
+
+    /* Additional Styles */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      filter: invert(1); /* Makes carousel controls visible in dark mode */
+    }
+
+
+    #loader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f3f3f3; /* Warna background loader */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #loader::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border: 5px solid #3498db;
+      border-top-color: transparent;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    </style>
+    
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <div id="loader"></div>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <!-- navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-light-mode"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand d-inline-flex" href="index.html">
+            <img class="card-img" src="assets/img/favicons/logo.png" alt="..." />
+            
+          </a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="portofolio.html">Galeri</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="about.html">Tentang Kami</a>
+              </li>
+            </ul>
+            <!-- Dropdown for Language Selection with Colored Flags -->
+            <div class="dropdown ms-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+              <span class="fi fi-id me-2"></span> ID
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="id-index.html">
+                    <span class="fi fi-id me-2"></span> ID
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="index.html">
+                    <span class="fi fi-us me-2"></span> ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- end navbar -->
+      <section class="py-0" id="header">
+        <div class="container">
+          <div class="row align-items-center min-vh-75 min-vh-md-50">
+            <!-- Left Column for Text -->
+            <div class="text-center text-md-center py-8">
+              <h1 class="lh-sm fs-lg-6 fs-xxl-7">
+                (Jepret) setiap momen bahagia <br> Menjadi memori yang indah
+              </h1>
+              <div class="mt-5">
+                <a class="btn btn-sm border-warning text-warning rounded-pill" href="#getstarted">
+                  <i class="fas fa-camera me-2"></i>Tertarik ? Klik aja 
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="container-fluid">
+          <div class="row gx-2">
+            <div class="col-12">
+              <div class="swiper-container pb-4 overflow-hidden" data-pagination-target="pagination1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-1.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-2.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-3.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-4.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-5.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-1.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-2.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-3.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-4.png" alt="swiper" />
+                  </div>
+                  <div class="swiper-slide h-auto">
+                    <img class="w-100" src="assets/img/gallery/swiper/s-5.png" alt="swiper" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 mt-3" id="howitworks">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
+               <span class="text-warning">Alur Layanan Kami</span>
+              </h1>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+              <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/one.png"
+                        alt="..."
+                      />
+                </div>
+              <h5 class="text-primary text-center mt-3">
+                Informasi 
+              </h5>
+              <p class="text-center mx-xl-7">
+                Silahkan request foto sesuai dengan keinginan kakak-kakak sekalian 
+              </p>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+              <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/two.png"
+                        alt="..."
+                      />
+              </div>
+              <h5 class="text-primary text-center mt-3">
+                Pengiriman
+              </h5>
+              <p class="text-center mx-xl-7">
+               Kirimkan subjek yang diinginkan melalui email, dan kami akan memproses lebih lanjut
+              </p>
+            </div>
+            <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+              <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/three.png"
+                        alt="..."
+                      />
+              </div>
+              <h5 class="text-primary text-center mt-3">Review</h5>
+              <p class="text-center mx-xl-7">
+                Setelah melalui proses (jepret) selesai, kakak-kakak akan menerima hasil dari kami
+              </p>
+            </div>
+          </div>
+          <hr class="mt-6" />
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+      
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-5" id="some">
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
+                (Jepret)an <span class="text-warning">Terbaru</span>
+              </h1>
+            </div>
+            <div class="col-12">
+              <nav></nav>
+              <div
+                class="nav nav-tabs clickr-tabs mb-6 justify-content-center"
+                id="nav-tab"
+                role="tablist"
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-animal-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-animal"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-animal"
+                  aria-selected="true"
+                >
+                  Binatang
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-landscape-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-landscape"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-landscape"
+                  aria-selected="false"
+                >
+                  Pemandangan
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-outdoor-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-outdoor"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-outdoor"
+                  aria-selected="false"
+                >
+                  Foto luar
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-building-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-building"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-building"
+                  aria-selected="false"
+                >
+                  Bangunan
+                </button>
+              </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-animal"
+                role="tabpanel"
+                aria-labelledby="nav-food-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/l1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/l2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/l3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/l4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/l5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portofolio.html"
+                      >Lihat lebih lanjut<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-landscape"
+                role="tabpanel"
+                aria-labelledby="nav-shoes-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/10.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/9.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portofolio.html"
+                      >Lihat lebih lanjut<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-outdoor"
+                role="tabpanel"
+                aria-labelledby="nav-watches-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/9.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portofolio.html"
+                      >Lihat lebih lanjut<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-building"
+                role="tabpanel"
+                aria-labelledby="nav-cosmetics-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portfolio.html"
+                      >Lihat lebih lanjut<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-phone"
+                role="tabpanel"
+                aria-labelledby="nav-phone-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-1.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-2.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-3.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-4.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-5.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/phone-6.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portfolio.html"
+                      >View more<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-camera"
+                role="tabpanel"
+                aria-labelledby="nav-camera-tab"
+              >
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-1.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-2.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-3.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-4.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-5.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/camera-6.png"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <a
+                      class="btn btn-lg btn-outline-warning rounded-pill"
+                      href="portfolio.html"
+                      >View more<i class="fas fa-arrow-right ms-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="bg-light py-5" id="services">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center lh-sm mb-5 fs-lg-4 fs-xxl-7">
+              Layanan Kami
+            </h1>
+            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+              <div class="col">
+                <div
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
+                >
+                  <div class="row g-0 flex-center">
+                    <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/animal.gif"
+                        alt="..."
+                      />
+                    </div>
+                    <h4 class="text-center fw-bold px-3 mt-3">
+                      Foto <br> Binatang
+                    </h4>
+                    <a
+                      class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
+                      href="portfolio.html"
+                      >Lebih Lanjut</i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
+                >
+                  <div class="row g-0 flex-center">
+                    <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/landscape.gif"
+                        alt="..."
+                      />
+                    </div>
+                    <h4 class="text-center fw-bold px-3 mt-3">
+                      Foto Pemandangan
+                    </h4>
+                    <a
+                      class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
+                      href="portfolio.html"
+                      >Lebih Lanjut</i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
+                >
+                  <div class="row g-0 flex-center">
+                    <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/outdoor.gif"
+                        alt="..."
+                      />
+                    </div>
+                    <h4 class="text-center fw-bold px-3 mt-3">
+                      Foto <br> Luar Ruangan
+                    </h4>
+                    <a
+                      class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
+                      href="portfolio.html"
+                      >Lebih Lanjut</i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="card shadow mb-3 hover-top-shadow rounded-3 py-3 bg-soft-white"
+                >
+                  <div class="row g-0 flex-center">
+                    <div class="col-md-5 col-lg-4 order-0 mb-md-4">
+                      <img
+                        class="text-center w-100"
+                        src="assets/img/icons/building.gif"
+                        alt="..."
+                      />
+                    </div>
+                    <h4 class="text-center fw-bold px-3 mt-3">
+                      Pemandangan <br> Bangunan
+                    </h4>
+                    <a
+                      class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
+                      href="portfolio.html"
+                      >Lebih Lanjut</i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="getstarted" class="py-6">
+        <div class="container">
+          <div
+            class="bg-holder z-index--1 rounded-3"
+            style="
+              background-image: url(assets/img/gallery/bg.png);
+              background-position: center;
+              background-size: cover;
+            "
+          ></div>
+          <!--/.bg-holder-->
+
+          <div class="row flex-center py-5">
+            <div class="col-xxl-9 py-5 text-center">
+              <h1 class="fw-bold mb-6 fs-lg-7">
+                Jepret Momen Anda<br />Bersama Kami
+              </h1>
+              <!-- Email Form -->
+              <form id="emailForm" class="d-flex flex-column align-items-center">
+                <input
+                  type="email"
+                  class="form-control mb-3 rounded-pill"
+                  placeholder="Masukkan email anda"
+                  id="emailInput"
+                  required
+                  style="max-width: 500px;"
+                />
+                <textarea
+                  class="form-control mb-3 rounded"
+                  placeholder="Masukkan pesan anda"
+                  id="messageInput"
+                  rows="4"
+                  required
+                  style="max-width: 500px;"
+                ></textarea>
+                <a class="btn btn-lg btn-warning rounded-pill" href="#" id="mailtoLink">
+                  Kirim<i class="fas fa-check ms-2"></i>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <script>
+        // JavaScript to handle mailto link generation
+        document.getElementById('mailtoLink').addEventListener('click', function () {
+          var email = 'jepretin@gmail.com'; // Email tujuan
+          var subject = 'New Message from Website JepreT';
+          var emailInput = document.getElementById('emailInput').value;
+          var messageInput = document.getElementById('messageInput').value;
+
+          // Membuat URL mailto
+          var mailtoLink = 'mailto:' + email 
+                        + '?subject=' + encodeURIComponent(subject)
+                        + '&body=' + encodeURIComponent('From: ' + emailInput + '\n\nMessage:\n' + messageInput);
+
+          // Mengatur atribut href dengan mailto URL
+          this.href = mailtoLink;
+        });
+      </script>
+
+      <!-- ============================================-->
+      <!-- footer begin ============================-->
+      <section class="py-0 pt-7" id="footer">
+        <div class="container">
+          <div class="row justify-content-xl-between gx-3">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Home</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#howitswork"
+                    >Alur Layanan</a
+                  >
+                </li>
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Portofolio Kami</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Perusahaan</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"
+                    >Tentang Kami</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+              <h5 class="lh-lg fw-bold text-1000">Social</h5>
+              <ul class="list-unstyled mb-md-4 mb-lg-0">
+                <li class="lh-lg">
+                  <a class="text-800 text-decoration-none" href="#!"> <a href="#!"
+                  ><i class="me-4 fab fa-facebook fs-3 text-facebook"></i></a
+                ><a href="#!">
+                  <i class="me-4 fab fa-instagram fs-3 text-instagram"></i
+                ></a></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <h5 class="lh-lg fw-bold text-1000">Kontak</h5>
+              <p class="text-800">
+                <i class="fas fa-phone-alt text-primary me-2"></i
+                ><span class="text-900">+214556905345</span>
+              </p>
+              <p class="text-800">
+                <i class="fas fa-envelope text-warning me-2"></i
+                ><span class="text-800">jepretin@gmail.com</span>
+              </p>
+              <p class="text-800">
+                <i class="fas fa-map-marker-alt text-success me-2"></i
+                ><span class="text-800">Surakarta, ID </span>
+              </p>
+            </div>
+          </div>
+          <div class="border-bottom border-3"></div>
+          <div class="row text-center">
+              <p class="text-1000 text-center">
+                Made with&nbsp;
+                <svg
+                  class="bi bi-suit-heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#EB6453"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                  ></path></svg
+                >&nbsp;by&nbsp;<a
+                  class="text-800"
+                  href="#"
+                  target="_blank"
+                  >JepretTeam @2024
+                </a>
+              </p>
+          </div>
+        </div>
+        <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+
+    <script>
+      window.onload = function() {
+        // Sembunyikan loader
+        document.getElementById('loader').style.display = 'none';
+        // Tampilkan konten
+        document.getElementById('content').style.display = 'block';
+      };
+    </script>
+
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+      document.getElementById('light-icon').classList.toggle('d-inline');
+      document.getElementById('light-icon').classList.toggle('d-none');
+      document.getElementById('dark-icon').classList.toggle('d-inline');
+      document.getElementById('dark-icon').classList.toggle('d-none');
+    }
+    </script>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
