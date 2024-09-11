@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Clickr | Landing, Ecommerce &amp; Business Templatee</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicons/favicon.ico"
+    />
+    <link rel="manifest" href="assets/img/favicons/manifest.json" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicons/mstile-150x150.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block"
+        data-navbar-on-scroll="data-navbar-on-scroll"
+      >
+        <div class="container">
+          <a class="navbar-brand d-inline-flex" href="index.html"
+            ><img
+              class="card-img"
+              src="assets/img/gallery/logo.png"
+              alt="..."
+            /><span class="fs-2 fw-bold text-primary ms-2"
+              >CLICK<span class="text-warning">R</span></span
+            ></a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a
+                  class="nav-link fw-bold"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="">Gallery</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="#howitworks">How it works</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="#services">Services</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link fw-bold" href="">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="py-8">
+        <div class="container">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h1 class="text-center lh-sm fs-lg-6 fs-xxl-7">
+                Our Portofolio
+              </h1>
+            </div>
+            <div class="col-12">
+              <nav></nav>
+              <div
+                class="nav nav-tabs clickr-tabs mb-6 justify-content-center"
+                id="nav-tab"
+                role="tablist"
+              >
+                <button
+                  class="nav-link active"
+                  id="nav-food-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-food"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-food"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-shoes-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-shoes"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-shoes"
+                  aria-selected="false"
+                >
+                  Animal
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-watches-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-watches"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-watches"
+                  aria-selected="false"
+                >
+                  Landscape
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-cosmetics-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-cosmetics"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-cosmetics"
+                  aria-selected="false"
+                >
+                  Outdoor
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-phone-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-phone"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-phone"
+                  aria-selected="false"
+                >
+                  Building
+                </button>
+              </div>
+            </div>
+            <!-- Tab all -->
+            <div class="tab-content" id="nav-tabContent">
+              <div 
+                class="tab-pane fade show active"
+                id="nav-food"
+                role="tabpanel"
+                aria-labelledby="nav-food-tab"
+              >
+              <!-- all picture | A(L1,2,3), L(L2,5,6), O(L1,2,5), B(L1,2,3) -->
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tab Animal -->
+              <div
+                class="tab-pane fade"
+                id="nav-shoes"
+                role="tabpanel"
+                aria-labelledby="nav-shoes-tab"
+              >
+              <!-- Animal Picture -->
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L7.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/animal/L10.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <!-- Tab landscape -->
+              <div
+                class="tab-pane fade"
+                id="nav-watches"
+                role="tabpanel"
+                aria-labelledby="nav-watches-tab"
+              >
+              <!-- landscape picture -->
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L7.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/landscape/L9.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- tab outdoor -->
+              <div
+                class="tab-pane fade"
+                id="nav-cosmetics"
+                role="tabpanel"
+                aria-labelledby="nav-cosmetics-tab"
+              >
+              <!-- outdoor picture -->
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L7.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/outdoor/L9.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- tab Building -->
+              <div
+                class="tab-pane fade"
+                id="nav-phone"
+                role="tabpanel"
+                aria-labelledby="nav-phone-tab"
+              >
+              <!-- building picture -->
+                <div class="row gx-3">
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L1.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L2.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L3.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L4.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L5.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L6.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L7.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L8.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 mb-3 h-100">
+                    <div class="card card-span h-100 text-white">
+                      <img
+                        class="rounded-3 h-100"
+                        src="assets/img/gallery/building/L9.jpg"
+                        alt="..."
+                      /><a class="stretched-link" href="#!"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-0 pt-7" id="footer">
+          <div class="container">
+            <div class="row justify-content-xl-between gx-3">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                <h5 class="lh-lg fw-bold text-1000">Home</h5>
+                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                  <li class="lh-lg">
+                    <a class="text-800 text-decoration-none" href="#howitswork"
+                      >How About This</a
+                    >
+                  </li>
+                  <li class="lh-lg">
+                    <a class="text-800 text-decoration-none" href="#!"
+                      >some portfolio</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                <h5 class="lh-lg fw-bold text-1000">Company</h5>
+                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                  <li class="lh-lg">
+                    <a class="text-800 text-decoration-none" href="#!"
+                      >About Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+                <h5 class="lh-lg fw-bold text-1000">Social</h5>
+                <ul class="list-unstyled mb-md-4 mb-lg-0">
+                  <li class="lh-lg">
+                    <a class="text-800 text-decoration-none" href="#!"> <a href="#!"
+                    ><i class="me-4 fab fa-facebook fs-3 text-facebook"></i></a
+                  ><a href="#!">
+                    <i class="me-4 fab fa-instagram fs-3 text-instagram"></i
+                  ></a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <h5 class="lh-lg fw-bold text-1000">Contact</h5>
+                <p class="text-800">
+                  <i class="fas fa-phone-alt text-primary me-2"></i
+                  ><span class="text-900">+214556905345</span>
+                </p>
+                <p class="text-800">
+                  <i class="fas fa-envelope text-warning me-2"></i
+                  ><span class="text-800">jepretin@gmail.com</span>
+                </p>
+                <p class="text-800">
+                  <i class="fas fa-map-marker-alt text-success me-2"></i
+                  ><span class="text-800">Surakarta, ID </span>
+                </p>
+              </div>
+            </div>
+            <div class="border-bottom border-3"></div>
+            <div class="row text-center">
+                <p class="text-1000 text-center">
+                  Made with&nbsp;
+                  <svg
+                    class="bi bi-suit-heart-fill"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    fill="#EB6453"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+                    ></path></svg
+                  >&nbsp;by&nbsp;<a
+                    class="text-800"
+                    href="#"
+                    target="_blank"
+                    >JepretTeam @2024
+                  </a>
+                </p>
+            </div>
+          </div>
+          <!-- end of .container-->
+        </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </body>
+</html>
