@@ -8,37 +8,21 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Clickr | Landing, Ecommerce &amp; Business Templatee</title>
+    <title>Jepret - Gallery and Fotografy  </title>
 
     <!-- ===============================================-->
     <!--    Favicons-->
     <!-- ===============================================-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
-    />
-    <link
+   <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
+      href="assets/img/favicons/logo-35x35.png"
     />
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/img/favicons/favicon.ico"
-    />
-    <link rel="manifest" href="assets/img/favicons/manifest.json" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/img/favicons/mstile-150x150.png"
+      href="assets/img/favicons/ico.ico"
     />
     <meta name="theme-color" content="#ffffff" />
 
@@ -48,6 +32,8 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+     <!-- Include Flag Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet" />
   </head>
 
   <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -56,19 +42,14 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block"
+        class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block navbar-light-mode"
         data-navbar-on-scroll="data-navbar-on-scroll"
       >
         <div class="container">
-          <a class="navbar-brand d-inline-flex" href="index.html"
-            ><img
-              class="card-img"
-              src="assets/img/gallery/logo.png"
-              alt="..."
-            /><span class="fs-2 fw-bold text-primary ms-2"
-              >CLICK<span class="text-warning">R</span></span
-            ></a
-          >
+          <a class="navbar-brand d-inline-flex" href="index.html">
+            <img class="card-img" src="assets/img/favicons/logo.png" alt="..." />
+            
+          </a>
           <button
             class="navbar-toggler collapsed"
             type="button"
@@ -86,26 +67,39 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
-                <a
-                  class="nav-link fw-bold"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="">Gallery</a>
+                <a class="nav-link fw-bold" href="portofolio.html">Gallery</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#howitworks">How it works</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="#services">Services</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link fw-bold" href="">About Us</a>
+                <a class="nav-link fw-bold" href="about.html">About Us</a>
               </li>
             </ul>
+            <!-- Dropdown for Language Selection with Colored Flags -->
+            <div class="dropdown ms-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-us me-1"></span> ENG
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-id me-2"></span> ID
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-us me-2"></span> ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
