@@ -38,65 +38,16 @@
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- Include Flag Icons CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" rel="stylesheet" />
+
+
     <style>
-    /* Light Mode (Default) */
-    body.light-mode {
-      background-color: white;
-      color: black;
-    }
-    .navbar-light-mode {
-      background-color: white; /* Navbar light background */
-      color: black;
-      border-bottom-left-radius: 30px; /* Adjust radius as needed */
-      border-bottom-right-radius: 30px; /* Adjust radius as needed */
-    }
 
-    body.light-mode .navbar {
-      background-color: white;
-      color: black;
-    }
-
-    body.light-mode .navbar .nav-link {
-      color: black;
-    }
-
-    .navbar-dark-mode {
-      background-color: #222; /* Navbar dark background */
+    .navbar {
       color: white;
       border-bottom-left-radius: 30px; /* Adjust radius as needed */
       border-bottom-right-radius: 30px; /* Adjust radius as needed */
-    }
-
-    body.light-mode .navbar .nav-link:hover {
-      color: #ffc107;
-    }
-
-    /* Dark Mode */
-    body.dark-mode {
-      background-color: #121212;
-      color: white;
-    }
-
-    body.dark-mode .navbar {
-      background-color: #222;
-      color: white;
-    }
-
-    body.dark-mode .navbar .nav-link {
-      color: white;
-    }
-
-    body.dark-mode .navbar .nav-link:hover {
-      color: #ffc107;
-    }
-
-    body.dark-mode .text-light {
-      color: white; /* Ensure text is white in dark mode */
-    }
-
-    /* Header Styling */
-    #header h1, #header p ,#howitworks h1 , #howitworks p ,#some h1 , #some p ,#footer h5 , #footer ul ,#footer li {
-      color: inherit; /* Ensure header text inherits color from body */
     }
 
     /* Additional Styles */
@@ -177,9 +128,7 @@
           >
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
-                <a class="nav-link fw-bold" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link fw-bold" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item px-2">
                 <a class="nav-link fw-bold" href="portofolio.html">Gallery</a>
@@ -188,14 +137,35 @@
                 <a class="nav-link fw-bold" href="about.html">About Us</a>
               </li>
             </ul>
-               <!-- Toggle Button for Dark/Light Mode -->
-            <button class="btn btn-sm btn-outline-secondary ms-3 rounded-pill" onclick="toggleMode()">
-              <i class="fas fa-sun d-none" id="light-icon"></i>
-              <i class="fas fa-moon d-inline" id="dark-icon"></i>
-            </button>
+            <!-- Dropdown for Language Selection with Colored Flags -->
+            <div class="dropdown ms-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-us me-1"></span> ENG
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-id me-2"></span> ID
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-us me-2"></span> ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
+
+
       <!-- end navbar -->
       <section class="py-0" id="header">
         <div class="container">
@@ -209,7 +179,7 @@
                 Capture your special moments with professional photography services that turn your memories into stunning visuals.
               </p>
               <div class="mt-5">
-                <a class="btn btn-sm btn-warning rounded-pill" href="#getstarted">
+                <a class="btn btn-sm border-warning text-warning rounded-pill" href="#getstarted">
                   <i class="fas fa-camera me-2"></i>Let's Jepret Photoshoot
                 </a>
               </div>
@@ -225,34 +195,34 @@
               <div class="swiper-container pb-4 overflow-hidden" data-pagination-target="pagination1">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-1.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-2.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-3.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-4.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-5.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-1.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-1.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-2.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-2.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-3.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-3.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-4.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-4.png" alt="swiper" />
                   </div>
                   <div class="swiper-slide h-auto">
-                    <img class="w-100" src="assets/img/gallery/product-5.png" alt="products" />
+                    <img class="w-100" src="assets/img/gallery/swiper/s-5.png" alt="swiper" />
                   </div>
                 </div>
               </div>
@@ -403,7 +373,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/1.jpg"
+                        src="assets/img/gallery/animal/l1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -412,7 +382,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/2.jpg"
+                        src="assets/img/gallery/animal/l2.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -421,7 +391,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/11.jpg"
+                        src="assets/img/gallery/animal/l3.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -430,7 +400,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/4.jpg"
+                        src="assets/img/gallery/animal/l4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -439,7 +409,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/5.jpg"
+                        src="assets/img/gallery/animal/l5.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -448,7 +418,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/animal/12.jpg"
+                        src="assets/img/gallery/animal/L6.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -456,7 +426,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portofolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -526,7 +496,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portofolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -596,7 +566,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portofolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -613,7 +583,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/1.jpg"
+                        src="assets/img/gallery/building/L1.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -622,7 +592,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/2.jpg"
+                        src="assets/img/gallery/building/L2.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -631,7 +601,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/3.jpg"
+                        src="assets/img/gallery/building/L3.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -640,7 +610,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/4.jpg"
+                        src="assets/img/gallery/building/L4.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -649,7 +619,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/8.jpg"
+                        src="assets/img/gallery/building/L8.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -658,7 +628,7 @@
                     <div class="card card-span h-100 text-white">
                       <img
                         class="rounded-3 h-100"
-                        src="assets/img/gallery/building/6.jpg"
+                        src="assets/img/gallery/building/L6.jpg"
                         alt="..."
                       /><a class="stretched-link" href="#!"></a>
                     </div>
@@ -666,7 +636,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portfolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -736,7 +706,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portfolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -806,7 +776,7 @@
                   <div class="col-12 d-flex justify-content-center mt-5">
                     <a
                       class="btn btn-lg btn-outline-warning rounded-pill"
-                      href="#!"
+                      href="portfolio.html"
                       >View more<i class="fas fa-arrow-right ms-2"></i
                     ></a>
                   </div>
@@ -843,7 +813,7 @@
                     </h4>
                     <a
                       class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
-                      href="#!"
+                      href="portfolio.html"
                       >view more</i
                     ></a>
                   </div>
@@ -866,7 +836,7 @@
                     </h4>
                     <a
                       class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
-                      href="#!"
+                      href="portfolio.html"
                       >view more</i
                     ></a>
                   </div>
@@ -889,7 +859,7 @@
                     </h4>
                     <a
                       class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
-                      href="#!"
+                      href="portfolio.html"
                       >view more</i
                     ></a>
                   </div>
@@ -912,7 +882,7 @@
                     </h4>
                     <a
                       class="btn btn-sm w-50 btn-outline-warning rounded-pill mx-auto mt-3"
-                      href="#!"
+                      href="portfolio.html"
                       >view more</i
                     ></a>
                   </div>

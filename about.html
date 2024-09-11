@@ -40,74 +40,17 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
 
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- flag -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
+      rel="stylesheet"
+    />
 
     <style>
-      /* Light Mode (Default) */
-      body.light-mode {
-        background-color: white;
-        color: black;
-      }
-      .navbar-light-mode {
-        background-color: white; /* Navbar light background */
-        color: black;
-        border-bottom-left-radius: 30px; /* Adjust radius as needed */
-        border-bottom-right-radius: 30px; /* Adjust radius as needed */
-      }
-
-      body.light-mode .navbar {
-        background-color: white;
-        color: black;
-      }
-
-      body.light-mode .navbar .nav-link {
-        color: black;
-      }
-
-      .navbar-dark-mode {
-        background-color: #222; /* Navbar dark background */
+      .navbar {
         color: white;
         border-bottom-left-radius: 30px; /* Adjust radius as needed */
         border-bottom-right-radius: 30px; /* Adjust radius as needed */
-      }
-
-      body.light-mode .navbar .nav-link:hover {
-        color: #ffc107;
-      }
-
-      /* Dark Mode */
-      body.dark-mode {
-        background-color: #121212;
-        color: white;
-      }
-
-      body.dark-mode .navbar {
-        background-color: #222;
-        color: white;
-      }
-
-      body.dark-mode .navbar .nav-link {
-        color: white;
-      }
-
-      body.dark-mode .navbar .nav-link:hover {
-        color: #ffc107;
-      }
-
-      body.dark-mode .text-light {
-        color: white; /* Ensure text is white in dark mode */
-      }
-
-      /* Header Styling */
-      #header h1,
-      #header p,
-      #howitworks h1,
-      #howitworks p,
-      #some h1,
-      #some p,
-      #footer h5,
-      #footer ul,
-      #footer li {
-        color: inherit; /* Ensure header text inherits color from body */
       }
 
       /* Additional Styles */
@@ -203,14 +146,30 @@
                 <a class="nav-link fw-bold" href="about.html">About Us</a>
               </li>
             </ul>
-            <!-- Toggle Button for Dark/Light Mode -->
-            <button
-              class="btn btn-sm btn-outline-secondary ms-3 rounded-pill"
-              onclick="toggleMode()"
-            >
-              <i class="fas fa-sun d-none" id="light-icon"></i>
-              <i class="fas fa-moon d-inline" id="dark-icon"></i>
-            </button>
+            <!-- Dropdown for Language Selection with Colored Flags -->
+            <div class="dropdown ms-3">
+              <button
+                class="btn btn-sm dropdown-toggle"
+                type="button"
+                id="languageDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="fi fi-us me-1"></span> ENG
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-id me-2"></span> ID
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="fi fi-us me-2"></span> ENG
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
